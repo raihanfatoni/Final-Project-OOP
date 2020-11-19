@@ -18,8 +18,10 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    -  Plan Discussion
 
 - **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+   -create a basic user interface 
+   -create a snake
+   -implement snake movements
+   -test out the movements of the snake
 
 - **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
    - Short changes 1
