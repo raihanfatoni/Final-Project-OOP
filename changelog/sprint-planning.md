@@ -31,8 +31,10 @@
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 1.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+| 1.1 | create a basic user interface| Toni | 
+| 1.2 | create a snake | Farhan | 
+| 1.3 | implement snake movements | Claura |
+| 1.4 | test out the movements of the snake | Toni |
 
 ## Retrospective 
 
