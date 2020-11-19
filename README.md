@@ -17,11 +17,11 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 - **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
    -  Plan Discussion
 
-- **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
-   -create a basic user interface 
-   -create a snake
-   -implement snake movements
-   -test out the movements of the snake
+- **[Sprint 1](changelog/sprint-1.md) - (date from 19/11/2020 until 24/11/2020 )** 
+   - create a basic user interface 
+   - create a snake
+   - implement snake movements
+   - test out the movements of the snake
 
 - **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
    - Short changes 1
