@@ -27,6 +27,8 @@
 Memerlukan waktu lama karena harus memahami syntax-syntax baru
 
 ## Next Sprint Backlog (Sprint 3)
+| ID  | Title/Desc | Asignee |
+| --- | ---------- | ------- |
 | 3.1 | implement the rules of the game| Claura |
 | 3.2 | create the score board| Toni |
 | 3.3 | implement the restarts and gameovers| Farhan |
