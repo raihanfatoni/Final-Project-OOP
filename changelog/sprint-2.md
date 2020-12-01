@@ -15,12 +15,12 @@
 
 ## Sprint 2 Backlog
 
-| ID  | Title/Desc | Asignee | 
-| --- | ---------- | ------- | 
-| 2.1 | create foods that would be eaten by the snake | Farhan |
-| 2.2 | make the foods appear randomly | Claura |
-| 2.3 | test out the food| Toni |
-| 2.4 | implement the concept of snake enlarging as it eats more foods| Farhan |
+| ID  | Title/Desc | Asignee | Status |
+| --- | ---------- | ------- | ------ |
+| 2.1 | create foods that would be eaten by the snake | Farhan | DONE |
+| 2.2 | make the foods appear randomly | Claura | DONE |
+| 2.3 | test out the food| Toni | DONE |
+| 2.4 | implement the concept of snake enlarging as it eats more foods| Farhan | DONE |
 
 ## Retrospective 
 
