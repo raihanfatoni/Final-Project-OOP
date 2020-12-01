@@ -23,9 +23,11 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    - implement snake movements
    - test out the movements of the snake
 
-- **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+- **[Sprint 2](changelog/sprint-2.md) - (24/11/2020 untill 01/12/2020)** 
+   - create foods that would be eaten by the snake | Farhan |
+   - make the foods appear randomly | Claura |
+   - test out the food| Toni |
+   - implement the concept of snake enlarging as it eats more foods| Farhan |
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
    - Short changes 1
@@ -33,7 +35,8 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Running The App
 
-TO;DO with steps
+javac SnakeGame.java
+java  SnakeGame
 
 ## Classes Used
 
