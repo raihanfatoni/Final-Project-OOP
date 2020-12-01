@@ -1,31 +1,35 @@
 # Scrum Report (Sprint 2)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 24/11/2020 to 01/12/2000
 
 ## Team (Insert your name)
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| 140810190027  | Zahra Claura Hermawan    |
+| 140810190029  | Muhammad Raihan Fatoni    |
+| 140810190073  | Farhan Maulana Alief |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 4             | 4             |
 
 ## Sprint 2 Backlog
 
-| ID  | Title/Desc | Asignee | Status |
-| --- | ---------- | ------- | ------ |
-| 2.1 | Preparing the x | Jane Doe | DONE |
-| 2.2 | Make the x | John Doe | FAILED |
+| ID  | Title/Desc | Asignee | 
+| --- | ---------- | ------- | 
+| 2.1 | create foods that would be eaten by the snake | Farhan |
+| 2.2 | make the foods appear randomly | Claura |
+| 2.3 | test out the food| Toni |
+| 2.4 | implement the concept of snake enlarging as it eats more foods| Farhan |
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Memerlukan waktu lama karena harus memahami syntax-syntax baru
 
 ## Next Sprint Backlog (Sprint 3)
-| ID  | Title/Desc | Asignee | 
-| --- | ---------- | ------- | 
-| 3.1 | Preparing the x | Jane Doe | 
-| 3.2 | Make the x | John Doe | 
+| 3.1 | implement the rules of the game| Claura |
+| 3.2 | create the score board| Toni |
+| 3.3 | implement the restarts and gameovers| Farhan |
+| 3.4 | test out the game| Claura |
+| 3.5 | bug fixes| Toni |
+| 3.6 | final check and the game is set| Farhan |
