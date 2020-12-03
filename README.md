@@ -29,7 +29,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    - test out the food| Toni |
    - implement the concept of snake enlarging as it eats more foods| Farhan |
    
-- **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
+- **[Sprint 3](changelog/sprint-3.md) - (date from 3/12/2020 until 8/12/2020)** 
    - Short changes 1
    - Short changes 2
 
