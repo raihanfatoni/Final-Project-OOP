@@ -24,14 +24,18 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
    - test out the movements of the snake
 
 - **[Sprint 2](changelog/sprint-2.md) - (24/11/2020 untill 01/12/2020)** 
-   - create foods that would be eaten by the snake | Farhan |
-   - make the foods appear randomly | Claura |
-   - test out the food| Toni |
-   - implement the concept of snake enlarging as it eats more foods| Farhan |
+   - create foods that would be eaten by the snake 
+   - make the foods appear randomly 
+   - test out the food
+   - implement the concept of snake enlarging as it eats more foods
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from 3/12/2020 until 8/12/2020)** 
-   - Short changes 1
-   - Short changes 2
+   - implement the rules of the game
+   - create the score board
+   - implement the restarts and gameovers
+   - test out the game
+   - bug fixes
+   - final check and the game is set
 
 ## Running The App
 
