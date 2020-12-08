@@ -11,16 +11,20 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 6             | 6             |
 
 ## Sprint 3 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 3.1 | Preparing the x | Jane Doe | DONE |
-| 3.2 | Make the x | John Doe | FAILED |
+| 3.1 | implement the rules of the game| Claura |
+| 3.2 | create the score board| Toni |
+| 3.3 | implement the restarts and gameovers| Farhan |
+| 3.4 | test out the game| Claura |
+| 3.5 | bug fixes| Toni |
+| 3.6 | final check and the game is set| Farhan |
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Terdapat kesulitan pada error-handling.
 
