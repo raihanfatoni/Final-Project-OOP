@@ -44,6 +44,16 @@
 | 2.3 | test out the food| Toni |
 | 2.4 | implement the concept of snake enlarging as it eats more foods| Farhan |
 
+## Sprint Backlog Plan (Sprint 3)
+| ID  | Title/Desc | Asignee | 
+| --- | ---------- | ------- | 
+| 3.1 | implement the rules of the game| Claura |
+| 3.2 | create the score board| Toni |
+| 3.3 | implement the restarts and gameovers| Farhan |
+| 3.4 | test out the game| Claura |
+| 3.5 | bug fixes| Toni |
+| 3.6 | final check and the game is set| Farhan |
+
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Terdapat kesulitan pada Error handling. Lorem ipsum dolor sit amet
