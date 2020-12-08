@@ -39,18 +39,16 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Running The App
 
-- Buka terminal
-- CD folder projekan Snake Game
-- Compile seluruh file yang ada di folder [javac *.java]
-- Run program [java SnakeGame]
-- Main kan Game
-- Jika player mati pencet spasi untuk restart
+javac SnakeGame.java
+java  SnakeGame
 
 ## Classes Used
 
-TO;DO
+* SnakeGame sebagai main class
+* GameFrame sebagai class untuk membuat board/frame
+* GamePanel sebagai class untuk menampilkan objek - objek yang ada di dalam board dan prosesnya
 
-UML image here
+https://github.com/raihanfatoni/Final-Project-OOP/blob/master/images/UML-2.jpg
 
 ## Notable Assumption and Design App Details
 
