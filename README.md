@@ -48,7 +48,7 @@ java  SnakeGame
 * GameFrame sebagai class untuk membuat board/frame
 * GamePanel sebagai class untuk menampilkan objek - objek yang ada di dalam board dan prosesnya
 
-https://github.com/raihanfatoni/Final-Project-OOP/blob/master/images/UML-2.jpg
+![alt text](https://github.com/raihanfatoni/Final-Project-OOP/blob/master/images/UML-2.jpg?raw=true)
 
 ## Notable Assumption and Design App Details
 
