@@ -39,20 +39,22 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Running The App
 
-- Buka terminal
-- CD folder projekan game
-- Compile seluruh file yang ada [javac *.java]
-- Run game [java SnakeGame]
-- Mulai game
+javac SnakeGame.java
+java  SnakeGame
 
 ## Classes Used
 
-* SnakeGame sebagai main class
-* GameFrame sebagai class untuk membuat board/frame
-* GamePanel sebagai class untuk menampilkan objek - objek yang ada di dalam board dan prosesnya
+TO;DO
 
-![alt text](https://github.com/raihanfatoni/Final-Project-OOP/blob/master/images/UML-2.jpg?raw=true)
+UML image here
 
 ## Notable Assumption and Design App Details
-
-TO;DO
+- Gim Oray adalah implementasi dari Snake Game yang mana tujuan utama dari permainan adalah mengarahkan ular untuk memakan buah yang mana tiap buah dimakan akan menambah score beserta panjang ular tersebut
+- Panjang dan lebar panel adalah 600x600 dengan rasio grid panel adalah 100x100.
+- Buah berukuran 1 petak.
+- Permainan berakhir ketika ular menabrak batas panel(atas,bawah,kanan,kiri) atau menabrak badannya sendiri
+- Diakhir permainan akan ditampilkan Score
+- Untuk menjalankan App Gim Oray adalah run dengan command sebagai berikut "java SnakeGame" jika baru pertama kali maka compile seluruh file terlebih dahulu dengan command "javac *.java" jika anda menggunakan VSCode bisa run App pada terminal yang tersedia namun jika menggunakan editor teks lain anda bisa run dengan melakukan "cmd" pada folder tempat file anda disimpan
+- Pada awal game panjang ular adalh 5 dan posisi ular pada tengah panel (koordinat(300,300))
+- Untuk memulai permainan tekan tombol space
+- Diakhir permainan pemain dapat melakukan restart dengan menekan tombol space
