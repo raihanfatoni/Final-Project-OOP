@@ -39,8 +39,11 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Running The App
 
-javac SnakeGame.java
-java  SnakeGame
+- Buka terminal
+- CD folder projekan game
+- Compile seluruh file yang ada [javac *.java]
+- Run game [java SnakeGame]
+- Mulai game
 
 ## Classes Used
 
