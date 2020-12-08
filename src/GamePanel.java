@@ -5,25 +5,30 @@ import java.util.Random;
 
 public class GamePanel extends JPanel implements ActionListener{
 
-    static final int SCREEN_WIDTH = 600;
-    static final int SCREEN_HEIGHT = 600;
-    static final int UNIT_SIZE = 25;
-    static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/UNIT_SIZE;
-    static final int DELAY = 75;
-    final int x[] = new int[GAME_UNITS];
-    final int y[] = new int[GAME_UNITS];
-    int bodyParts = 6;
-    int appleEaten;
-    int appleX;
-    int appleY;
-    char direction = 'R';
-    boolean running = false;
-    Timer timer;
+    private static final int SCREEN_WIDTH = 600;
+    private static final int SCREEN_HEIGHT = 600;
+    private static final int UNIT_SIZE = 6;
+    private static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/UNIT_SIZE;
+    private static final int DELAY = 100;
+    private static boolean On = false;
+    private static boolean New = false;
+    private final int x[] = new int[GAME_UNITS];
+    private final int y[] = new int[GAME_UNITS];
+    private int bodyParts = 5;
+    private int appleEaten;
+    private int appleX;
+    private int appleY;
+    private int first = 0;
+    private char direction = 'R';
+    private boolean running = false;
+    private Timer timer;
+
+
 
     GamePanel(){
         Random random = new Random();
         this.setPreferredSize(new Dimension(SCREEN_WIDTH,SCREEN_HEIGHT));
-        this.setBackground(Color.black);
+        this.setBackground(Color.black );
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
         startGame();
@@ -35,31 +40,61 @@ public class GamePanel extends JPanel implements ActionListener{
         timer.start();
     }
 
+    @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         draw(g); 
     }
+
     public void draw(Graphics g){
-        for(int i=0;i<SCREEN_HEIGHT/UNIT_SIZE;i++){
-            g.drawLine(i*UNIT_SIZE, 0, i*UNIT_SIZE, SCREEN_HEIGHT);
-            g.drawLine(0, i*UNIT_SIZE, SCREEN_WIDTH, i*UNIT_SIZE);
-        }
-        g.setColor(Color.red);
-        g.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
-
-        for(int i = 0; i< bodyParts; i++){
-            if(i == 0){
-                g.setColor(Color.blue);
-                g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
-
+        if(running){
+            for(int i=0;i<SCREEN_HEIGHT/UNIT_SIZE;i++){
+                g.drawLine(i*UNIT_SIZE, 0, i*UNIT_SIZE, SCREEN_HEIGHT);
+                g.drawLine(0, i*UNIT_SIZE, SCREEN_WIDTH, i*UNIT_SIZE);
             }
-            else {
-                g.setColor(new Color(0, 0, 128));
-                g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+            g.setColor(Color.red);
+            g.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
+
+            if (first == 0){
+            for(int i=0; i < bodyParts; i++){
+                x[0]=300;
+                x[1]=300;
+                x[2]=300;
+                x[3]=300;
+                x[4]=300;
+
+                y[0]=300;
+                y[1]=300;
+                y[2]=300;
+                y[3]=300;
+                y[4]=300;
+            }
+
+        }
+            for(int i = 0; i< bodyParts; i++){
+                first++;
+                if(i == 0){
+                    g.setColor(Color.blue);
+                    g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+
+                }
+                else {
+                    g.setColor(new Color(0, 0, 128));
+                    g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                }
+            }
+            g.setColor(new Color(0, 0, 128));
+            g.setFont(new Font("Ink Free",Font.BOLD,40));
+            FontMetrics metrics = getFontMetrics(g.getFont());
+            g.drawString("Score : "+appleEaten, (SCREEN_WIDTH - metrics.stringWidth("Score : "+appleEaten))/2, g.getFont().getSize());
+        }   
+        else {
+            gameOver(g);
+            if (New = true){
+                repaint();
             }
         }
-    
-    }
+    }   
 
     public void newApple(){
         Random random = new Random();
@@ -89,7 +124,7 @@ public class GamePanel extends JPanel implements ActionListener{
         }
 
     }
-    public void chechApple(){
+    public void checkApple(){
         if((x[0] == appleX) && (y[0] == appleY)){
             bodyParts++;
             appleEaten++;
@@ -112,7 +147,7 @@ public class GamePanel extends JPanel implements ActionListener{
             running = false;
         }
         // Kalo kepala kena panel atas
-        if(y[0] > SCREEN_HEIGHT){
+        if(y[0] < 0){
             running = false;
         }
         // Kalo kepala kena panel bawah
@@ -124,14 +159,46 @@ public class GamePanel extends JPanel implements ActionListener{
             timer.stop();
         }
     }
+
+    public void New(){
+        do{
+            appleEaten = 0;
+            bodyParts = 5;
+            first = 0;
+            direction = 'U';
+            On = true;
+            running = true;
+            New = true;
+            startGame();
+        }while (running == false && On == false);
+    }
+
     public void gameOver(Graphics g){
+        //Score
+        g.setColor(new Color(0, 0, 128));
+        g.setFont(new Font("Ink Free",Font.BOLD,40));
+        FontMetrics metrics1 = getFontMetrics(g.getFont());
+        g.drawString("Score : "+appleEaten, (SCREEN_WIDTH - metrics1.stringWidth("Score : "+appleEaten))/2, g.getFont().getSize());
+        //Game Over
+        g.setColor(new Color(0, 0, 128));
+        g.setFont(new Font("Ink Free",Font.BOLD,60));
+        FontMetrics metrics2 = getFontMetrics(g.getFont());
+        g.drawString("Loser!!!", (SCREEN_WIDTH - metrics2.stringWidth("Loser!!!"))/4, SCREEN_HEIGHT/4 );
+        FontMetrics metrics3 = getFontMetrics(g.getFont());
+        g.drawString("Space To restart", (SCREEN_WIDTH - metrics3.stringWidth("Space to restart"))/3, SCREEN_HEIGHT/3 );
+        g.setColor(new Color(0, 0, 128));
+        g.setFont(new Font("Ink Free",Font.BOLD,35));
+        FontMetrics metrics4 = getFontMetrics(g.getFont());
+        g.drawString("Space in game for boost", (SCREEN_WIDTH - metrics3.stringWidth("Space in game for boost"))/8, SCREEN_HEIGHT/2 );
+
 
     }
+
     @Override
     public void actionPerformed(ActionEvent e){
         if(running){
             move();
-            chechApple();
+            checkApple();
             checkCollisions();
         }
         repaint();
@@ -160,11 +227,11 @@ public class GamePanel extends JPanel implements ActionListener{
                     direction = 'D';
                 }
                 break;
-            
+            case KeyEvent.VK_SPACE:
+                New();
+                break;
+
             }
-
-
         }
     }
 }
-
