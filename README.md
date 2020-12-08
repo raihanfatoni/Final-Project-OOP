@@ -47,9 +47,12 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Classes Used
 
-TO;DO
+* SnakeGame sebagai main class
+* GameFrame sebagai class untuk membuat board/frame
+* GamePanel sebagai class untuk menampilkan objek - objek yang ada di dalam board dan prosesnya
 
-UML image here
+
+![alt text](https://github.com/raihanfatoni/Final-Project-OOP/blob/master/images/UML-2.jpg?raw=true)
 
 ## Notable Assumption and Design App Details
 - Gim Oray adalah implementasi dari Snake Game yang mana tujuan utama dari permainan adalah mengarahkan ular untuk memakan buah yang mana tiap buah dimakan akan menambah score beserta panjang ular tersebut
